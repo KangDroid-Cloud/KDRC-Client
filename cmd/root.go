@@ -16,6 +16,7 @@ var rootCmd = &cobra.Command{
 
 func init() {
 	rootCmd.AddCommand(account.AccountCmd)
+	rootCmd.AddCommand(loginCmd)
 }
 
 func Execute() error {
